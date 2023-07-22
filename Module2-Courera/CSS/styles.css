@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Optional: Set a font-family for the entire page */
+}
+
+.container {
+    margin: 10px;
+}
+
+.section {
+    float: left;
+    width: 33.33%;
+    margin: 20px;
+    /* Each section takes up 33.33% of the container's width in desktop view */
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    position: relative;
+    background-color: #3399ff;
+    /* Unique color for each section title region */
+    color: white;
+    /* Adjust the text color for better readability */
+    padding: 5px;
+}
+
+/* Media queries for tablet and mobile views */
+@media screen and (max-width: 991px) {
+    .section {
+        width: 50%;
+        /* Each section takes up 50% of the container's width in tablet view */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+        /* Each section takes up 100% of the container's width in mobile view */
+    }
+}
