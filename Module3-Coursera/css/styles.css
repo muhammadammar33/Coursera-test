@@ -1,22 +1,56 @@
 /* Custom styles for the scrolling navbar */
+body {
+    padding-top: 70px;
+    /* Adjust this value to make sure content doesn't get hidden under the fixed navbar */
+}
+
 .navbar {
-    position: absolute;
-    width: 100%;
-    font-style: bold;
-    background-color:grey;
+    background-color: #333;
+    /* Change the background color of the navbar */
+    border-radius: 0;
+    /* Optional: Removes rounded corners from the navbar */
     border: none;
-    padding: 10px;
-    transition: background-color 0.3s;
+    /* Optional: Removes border from the navbar */
 }
 
 .navbar-brand {
-    color: black;
-    font-size: large;
-    font-style:italic;
+    margin-left: 15px;
+    /* Adjust this value to add some space between the navbar brand and the edge of the navbar */
+    color: #FFF;
+    /* Change the color of the navbar brand text */
 }
 
-/* Make the navbar invisible when scrolled down */
-.navbar.scrolled {
-    background-color: transparent;
+.navbar-toggle {
+    margin-top: 15px;
+    /* Adjust this value to vertically center the mobile menu button */
+    border: none;
+    /* Optional: Removes border from the mobile menu button */
 }
 
+.navbar-toggle .icon-bar {
+    background-color: #FFF;
+    /* Change the color of the mobile menu button's bars */
+}
+
+.dropdown-menu {
+    background-color: #EEE;
+    /* Change the background color of the dropdown menu */
+    width: 100%;
+    /* Make the dropdown menu take up the entire width of the screen */
+}
+
+.page-heading {
+    text-align: center;
+    /* Center the text within the page heading */
+    margin-top: 30px;
+    /* Add some top margin to the page heading */
+}
+
+.tall-section {
+    background-color: #F5F5F5;
+    /* Change the background color of the tall section */
+    height: 1000px;
+    /* Set the height of the tall section */
+    margin: 20px 0;
+    /* Add some margin to the tall section */
+}
