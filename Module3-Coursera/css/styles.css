@@ -1,0 +1,22 @@
+/* Custom styles for the scrolling navbar */
+.navbar {
+    position: absolute;
+    width: 100%;
+    font-style: bold;
+    background-color:grey;
+    border: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: large;
+    font-style:italic;
+}
+
+/* Make the navbar invisible when scrolled down */
+.navbar.scrolled {
+    background-color: transparent;
+}
+
